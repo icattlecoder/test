@@ -601,4 +601,6 @@ Copyright (c) 2013 qiniu.com
 
 基于 MIT 协议发布:
 
-* [www.opensource.org/licenses/MIT](http://www.opensource.org/licenses/MIT)
+* [www.opensource.org/licenses/MIT](http://www.opensource.org/licenses/MIT).
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
