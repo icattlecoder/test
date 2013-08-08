@@ -32,17 +32,19 @@ post_data['file'] = 'your file path'
 post_data['x:username'] = 'username'
 //multipart/form-data提交表单至七牛
 ret = webClient.MultiPost(post_data,"http://up.qiniu.com")
-if(ret.ok){
-	print(ret.hash)
-	print(ret.key)
-}
+
 ```
  
  </td>
  <td>
+ </td>
+ <tr>
+ <td>
+ </td>
+ <td>
+Response Headers
  
-``` javascript
-
+``` 
 HTTP/1.1 200 OK
 Server: nginx/1.0.14
 Date: Thu, 08 Aug 2013 09:38:17 GMT
@@ -52,11 +54,31 @@ Pragma: no-cache
 X-Content-Type-Options: nosniff
 X-Log: BDT;BDT;LBD:1;rs.put:85;UP:88
 X-Reqid: uT8AAIWMj-2BXxgT
+```
 
-{"hash":"FltYsrYqyqv3v7Xt6CZL2Xb5ATxT","key":"FltYsrYqyqv3v7Xt6CZL2Xb5ATxT"}
+Response Body
 
+``` json
+{
+  "hash":"FltYsrYqyqv3v7Xt6CZL2Xb5ATxT",
+  "key":"FltYsrYqyqv3v7Xt6CZL2Xb5ATxT"
+}
 ``` 
- 
  </td>
  </tr>
+ <tr>
+ <td>
+
+```javascript
+if(ret.ok){
+	print(ret.hash)
+	print(ret.key)
+} 
+```
+ </td>
+ 
+ <td>
+ </td>
+ </tr>
+ 
  </table>
