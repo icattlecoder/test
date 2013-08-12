@@ -2,9 +2,12 @@
  <table> 
  	<tr> 
  		<th rowspan="2" >
+ 		
  ** 应用客户端(APPClient) **
  
-``` javascript
+ 
+ 
+``` 
 //向服务端请求上传token
 upload_token = AppServer.GetToken();//=======1====>
 
@@ -24,21 +27,21 @@ ret = IOClient.PutFile(upload_token,
 
 
 ```
+
 </th>
 <td>
 ** 服务端(APPServer)  **
 
-``` php
-//服务端使用sdk,生成upload token,颁发给应用客户端
+```
 public GetToken(){
-	$AccessKey = "your accessKey";
-	$SecreteKey = "your secreteKey"
-	$putPolicy = new Qiniu_RS_PutPolicy($bucket);
-	$upToken = $putPolicy->Token(null); 
-	echo $upToken;	
-}
+//服务端使用sdk,生成upload token,颁发给应用客户端
+$AccessKey = "your accessKey";
+$SecreteKey = "your secreteKey"
+$putPolicy = new Qiniu_RS_PutPolicy($bucket);
+$upToken = $putPolicy->Token(null); 
+echo $upToken;
 //<===2===
-
+}
 ```
 
 </td>
