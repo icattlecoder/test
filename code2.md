@@ -25,6 +25,7 @@ ret = IOClient.PutFile(upload_token,
 			putExtra);//====3===>
 						
 
+//======5======
 //七牛返回客户端基本信息
 print(ret.hash)
 print(ret.key)
