@@ -20,9 +20,14 @@ upload_token = AppServer.GetToken();//=======1====>
 
 //从服务端接收到上传的token后，将文件上传至七牛
 ret = IOClient.PutFile(upload_token,
-						file_path,
-						key,
-						putExtra);//--\|/|=3===>
+			file_path,
+			key,
+			putExtra);//====3===>
+						
+
+//七牛返回客户端基本信息
+print(ret.hash)
+print(ret.key)
 
 
 
