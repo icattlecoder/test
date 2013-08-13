@@ -1,7 +1,7 @@
      
  <table> 
  	<tr> 
- 		<th rowspan="2" >
+ 		<td rowspan="2" >
  		
  ** 应用客户端(APPClient) **
  
@@ -28,7 +28,7 @@ ret = IOClient.PutFile(upload_token,
 
 ```
 
-</th>
+</td>
 <td>
 ** 服务端(APPServer)  **
 
