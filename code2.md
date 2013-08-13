@@ -7,7 +7,7 @@
  
  
  
-``` 
+``` java
 //向服务端请求上传token
 upload_token = AppServer.GetToken();//=======1====>
 
@@ -38,7 +38,7 @@ print(ret.key)
 <td>
 ** 服务端(APPServer)  **
 
-```
+```php
 public GetToken(){
 //服务端使用sdk,生成upload token,颁发给应用客户端
 $AccessKey = "your accessKey";
