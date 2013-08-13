@@ -7,7 +7,7 @@
  
  
  
-``` 
+``` java
 //向服务端请求上传token
 upload_token = AppServer.GetToken();//=======1====>
 
@@ -46,7 +46,7 @@ IOClient.redirect("http://requestb.in/1jv3ef41"+
 <td>
 ** 服务端(APPServer)  **
 
-```
+``` php
 //服务端使用sdk,生成upload token,颁发给应用客户端
 public GetToken(){
 $AccessKey = "your accessKey";
@@ -90,7 +90,7 @@ X-Reqid: -BIAAKA3FfObmBkT
 
 ** 重定向服务器(APPServer)  **
 
-```
+``` php
 //=========6=========>
 //重定向服务器，接收returnBody的内容
 public GetRetunrBody(){
