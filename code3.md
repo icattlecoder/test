@@ -1,7 +1,7 @@
      
  <table> 
  	<tr> 
- 		<th rowspan="2" >
+ 		<td rowspan="2" >
  		
  ** 应用客户端(APPClient) **
  
@@ -15,6 +15,9 @@ upload_token = AppServer.GetToken();//=======1====>
 
 
 
+
+
+
 //从服务端接收到上传的token后，将文件上传至七牛
 ret = IOClient.PutFile(upload_token,
 		file_path,
@@ -23,6 +26,14 @@ ret = IOClient.PutFile(upload_token,
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+//=========5=========
 //从七牛接收到重定向http包，自动重定向
 IOClient.redirect("http://requestb.in/1jv3ef41"+
 	"?upload_ret=eyJrZSI6MTIzfQ==")
@@ -31,7 +42,7 @@ IOClient.redirect("http://requestb.in/1jv3ef41"+
 
 ```
 
-</th>
+</td>
 <td>
 ** 服务端(APPServer)  **
 
@@ -80,7 +91,7 @@ X-Reqid: -BIAAKA3FfObmBkT
 ** 重定向服务器(APPServer)  **
 
 ```
-//=========5=========>
+//=========6=========>
 //重定向服务器，接收returnBody的内容
 public GetRetunrBody(){
 	$retBody = $_GET["upload_ret"];
@@ -89,7 +100,6 @@ public GetRetunrBody(){
 	//对解码后的内容进行json反序列化
 	$res = json_decode($retBody);
 	print_r($res["name"]);
-	//<===2===
 }
 ```
 
